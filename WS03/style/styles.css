@@ -1,27 +1,135 @@
 body{
-    background-color: black;
-    color: white;
+  background-color: lightgray;
+  color: black;
 }
 
 h1 {
-    font-size: 20px;
-  }
-  
-  p {
-    font-size: 12px;
-    color: lightgray;
-  }
-  
-  .container {
-    border: dotted 2px;
-    width: 100px;
-    height: 100px;
-  }
-  ol {
-    list-style-type: lower-alpha; /* a, b, c, d... */
-  }
+  font-size: 20px;
+}
 
-  ul {
-    list-style-type: square; /* Changes the dots to squares */
+p {
+  font-size: 12px;
+  color: lightgray;
+}
+
+.container {
+  border: dotted 2px;
+  width: 100px;
+  height: 100px;
+}
+ol {
+  list-style-type: lower-alpha; /* a, b, c, d... */
+}
+
+ul {
+  list-style-type: square; /* Changes the dots to squares */
+}
+
+table {
+width: 100%;
+border-collapse: collapse; /* Collapses the borders into a single border */
+}
+
+th, td {
+border: 1px solid white; /* Adds a border to the table cells */
+padding: 8px; /* Adds padding inside the cells */
+text-align: left; /* Aligns text to the left */
+}
+
+th {
+background-color: #f2f2f2; /* Adds a background color to the table headers */
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 10px; /* Adds space between form elements */
+}
+
+label {
+font-weight: bold; /* Makes the label text bold */
+}
+input[type="text"], input[type="email"] {
+padding: 8px; /* Adds padding inside the input fields */
+border: 1px solid #ddd; /* Adds a border to the input fields */
+border-radius: 4px; /* Rounds the corners of the input fields */
+}
+
+input[type="submit"] {
+background-color: #4CAF50;
+padding: 10px; /* Adds padding inside the input fields */
+border: none; /* Adds a border to the input fields */
+border-radius: 4px; /* Rounds the corners of the input fields */
+cursor: pointer;
+}
+
+.transition-button {
+  background-color: lightblue;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+  background-color: lightcoral;
+}
+
+.animation-box {
+  width: 50px;
+  height: 50px;
+  background-color: lightgreen;
+  position: relative;
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    left: 0;
   }
-  
+  to {
+    left: 100px;
+  }
+}
+
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
+}
+.pseudo-list li:nth-child(even) {
+  background-color: white;
+}
+
+.filter-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
+/* Add a hover effect to the image */
+
+.quote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.quote::before {
+  content: '"';
+  position: absolute;
+  font-size: 40px;
+  left: 0;
+  top: 0;
+  color: black;
+}
+
+.quote::after {
+  content: '"';
+  position: relative;
+  font-size: 40px;
+  left: auto;
+  right: 0;
+  top: 0;
+  color: black;
+}

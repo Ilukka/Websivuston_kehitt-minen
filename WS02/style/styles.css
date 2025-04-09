@@ -1,0 +1,64 @@
+body{
+    background-color: lightgray;
+    color: black;
+}
+
+h1 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 12px;
+    color: lightgray;
+  }
+  
+  .container {
+    border: dotted 2px;
+    width: 100px;
+    height: 100px;
+  }
+  ol {
+    list-style-type: lower-alpha; /* a, b, c, d... */
+  }
+
+  ul {
+    list-style-type: square; /* Changes the dots to squares */
+  }
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Collapses the borders into a single border */
+}
+
+th, td {
+  border: 1px solid white; /* Adds a border to the table cells */
+  padding: 8px; /* Adds padding inside the cells */
+  text-align: left; /* Aligns text to the left */
+}
+
+th {
+  background-color: #f2f2f2; /* Adds a background color to the table headers */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds space between form elements */
+}
+
+label {
+  font-weight: bold; /* Makes the label text bold */
+}
+input[type="text"], input[type="email"] {
+  padding: 8px; /* Adds padding inside the input fields */
+  border: 1px solid #ddd; /* Adds a border to the input fields */
+  border-radius: 4px; /* Rounds the corners of the input fields */
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  padding: 10px; /* Adds padding inside the input fields */
+  border: none; /* Adds a border to the input fields */
+  border-radius: 4px; /* Rounds the corners of the input fields */
+  cursor: pointer;
+}
